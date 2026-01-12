@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="payment1" class="com.kodewala.pojo.Payment">
+    <property name="paymentType" value="Credit Card"></property>
+    </bean>
+    <bean id="order1" class="com.kodewala.pojo.Order">
+    <property name="ordrId" value="01345"></property>
+     <property name="amount" value="12500.00"></property>
+      <property name="Payment" ref="payment1"></property>
+    </bean>
+    
+    <bean id="payment2" class="com.kodewala.pojo.Payment">
+    <property name="paymentType" value="COD"></property>
+    </bean>
+    <bean id="order2" class="com.kodewala.pojo.Order">
+    <property name="ordrId" value="0850"></property>
+     <property name="amount" value="18500.00"></property>
+      <property name="Payment" ref="payment2"></property>
+    </bean>
+    
+    <bean id="payment3" class="com.kodewala.pojo.Payment">
+    <property name="paymentType" value="UPI"></property>
+    </bean>
+    <bean id="order3" class="com.kodewala.pojo.Order">
+    <property name="ordrId" value="89744"></property>
+     <property name="amount" value="1579.00"></property>
+      <property name="Payment" ref="payment3"></property>
+    </bean>
+
+
+</beans>

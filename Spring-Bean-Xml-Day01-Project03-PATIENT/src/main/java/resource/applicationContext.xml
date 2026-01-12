@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<!-- This comment explains that below we will define Spring beans (objects). -->
+
+
+<bean id="p1" class="com.kodewala.pojo.Patient">
+    <!-- 
+        Bean 1: This creates the first Patient object.
+        id="p1" → This is the name you will use in Java to fetch this object.
+        class="com.kodewala.pojo.Patient" → Spring will create an object of Patient class.
+    -->
+
+    <property name="name" value="Shakir"></property>
+    <!-- Calls setName("Shakir") on the Patient object. -->
+
+    <property name="disease" value="kideny-stone"></property>
+    <!-- Calls setDisease("kideny-stone") -->
+
+    <property name="age" value="27"></property>
+    <!-- Calls setAge(27) -->
+</bean>
+<!-- End of Patient p1 bean -->
+
+
+<bean id="p2" class="com.kodewala.pojo.Patient">
+    <!-- Bean 2: Creates second Patient object with ID = p2 -->
+
+    <property name="name" value="Sabir"></property>
+    <!-- setName("Sabir") -->
+
+    <property name="disease" value="Fever"></property>
+    <!-- setDisease("Fever") -->
+
+    <property name="age" value="30"></property>
+    <!-- setAge(30) -->
+</bean>
+<!-- End of Patient p2 bean -->
+
+
+<bean id="p3" class="com.kodewala.pojo.Patient">
+    <!-- Bean 3: Creates third Patient object with ID = p3 -->
+
+    <property name="name" value="Sajid"></property>
+    <!-- setName("Sajid") -->
+
+    <property name="disease" value="Acidity"></property>
+    <!-- setDisease("Acidity") -->
+
+    <property name="age" value="34"></property>
+    <!-- setAge(34) -->
+</bean>
+<!-- End of Patient p3 bean -->
+    
+</beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean id="item1" class="com.kodewala.pojo.Item">
+<property name="name" value="Paneer Tikka"></property>
+<property name="price" value="200"></property>
+</bean>
+<bean id="order1" class="com.kodewala.pojo.Order">
+<property name="orderId" value="201"></property>
+<property name="quantity" value="2"></property>
+<property name="item" ref="item1"></property>
+
+</bean>
+
+</beans>

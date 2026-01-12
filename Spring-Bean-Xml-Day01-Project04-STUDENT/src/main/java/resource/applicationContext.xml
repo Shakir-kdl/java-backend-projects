@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id ="std1" class="com.kodewala.pojo.Student">
+    <property name="name" value="Ayaan"></property>
+     <property name="standard" value="7"></property>
+      <property name="cgpa" value="8.5"></property>
+    </bean>
+    <bean id ="std2" class="com.kodewala.pojo.Student">
+    <property name="name" value="Rehan"></property>
+     <property name="standard" value="8"></property>
+      <property name="cgpa" value="9.2"></property>
+    </bean>
+    <bean id ="std3" class="com.kodewala.pojo.Student">
+    <property name="name" value="Sara"></property>
+     <property name="standard" value="10"></property>
+      <property name="cgpa" value="7.2"></property>
+    </bean>
+
+</beans>

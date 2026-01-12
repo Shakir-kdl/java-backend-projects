@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="user1" class="com.kodewala.pojo.User">
+    <property name="name" value="Shakir"></property>
+     <property name="email" value="Sh@123.com"></property>
+      <property name="address" ref="address1"></property>
+    </bean>
+    <bean id="address1" class="com.kodewala.pojo.Address">
+    <property name="city" value="Khandela"></property>
+     <property name="state" value="Rajasthan"></property>
+     <property name="pincode" value="332709"></property>
+    
+    </bean>
+    <bean id="user2" class="com.kodewala.pojo.User">
+    <property name="name" value="Khan"></property>
+     <property name="email" value="kdl@56.com"></property>
+     <property name="address" ref="address2"></property>
+    </bean>
+    <bean id="address2" class="com.kodewala.pojo.Address">
+    <property name="city" value="Bengaluru"></property>
+     <property name="state" value="Karnataka"></property>
+     <property name="pincode" value="560100"></property>
+     
+    </bean>
+    <bean id="user3" class="com.kodewala.pojo.User">
+    <property name="name" value="iqra"></property>
+     <property name="email" value="iq@568.com"></property>
+     <property name="address" ref="address3"></property>
+    </bean>
+    <bean id="address3" class="com.kodewala.pojo.Address">
+    <property name="city" value="Sikar"></property>
+     <property name="state" value="Rajasthan"></property>
+     <property name="pincode" value="332005"></property>
+     
+    </bean>
+    
+
+</beans>

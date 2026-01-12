@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id ="c1" class ="com.kodewala.pojo.Car">
+    <property name="modelName" value="Swift"></property>
+    <property name="companyName" value="Maruti"></property>
+    <property name="rentPerDay" value="1500/day"></property>
+    </bean>
+    <bean id ="c2" class ="com.kodewala.pojo.Car">
+    <property name="modelName" value="City"></property>
+    <property name="companyName" value="Honda"></property>
+    <property name="rentPerDay" value="2500/day"></property>
+    </bean>
+    <bean id ="c3" class ="com.kodewala.pojo.Car">
+    <property name="modelName" value="Nexon"></property>
+    <property name="companyName" value="Tata"></property>
+    <property name="rentPerDay" value="2000/day"></property>
+    </bean>
+    
+</beans>
